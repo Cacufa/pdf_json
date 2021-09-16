@@ -1,0 +1,69 @@
+{
+    "sections": [
+      {
+        "elements": [
+          {
+            "elements": [
+              {
+                "align": "left",
+                "type": "image",
+                "value": "$$ORG_LOGO",
+                "width": "100"
+              }
+            ],
+            "bordered": false,
+            "height": 100,
+            "name": "Header",
+            "type": "vcontainer"
+          },
+          {
+            "elements": [
+              {
+                "align": "center",
+                "bold": "true",
+                "fontSize": 18,
+                "type": "text",
+                "value": "Job card"
+              },
+              {
+                "type": "newline"
+              },
+              {
+                "type": "text",
+                "value": "$$EVENT_DATE",
+                "width": 275
+              },
+              {
+                "type": "text",
+                "value": "$$WORKER_NAME",
+                "width": 275
+              },
+              {
+                "type": "text",
+                "value": "$$LOCATION",
+                "width": 150
+              },
+              {
+                "type": "text",
+                "value": "$$TASK_START",
+                "width": 275
+              },
+              {
+                "type": "text",
+                "value": "$$TASK_END",
+                "width": 150
+              }
+            ],
+            "bordered": false,
+            "height": 100,
+            "name": "Header",
+            "type": "vcontainer"
+          }
+        ],
+        "bordered": false,
+        "height": 190,
+        "name": "Header",
+        "type": "hcontainer"
+      }
+    ]
+  }

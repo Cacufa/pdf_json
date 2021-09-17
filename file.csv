@@ -12,3 +12,29 @@ group1,field,39931,List,,Fish Tape
 group1,field,39932,Text,,Fish Tape - Comments
 group1,field,39933,List,,Hack saw 
 group1,field,39934,Text,,Hack saw - Comments
+group,group2,vcontainer,400,TRUE,
+group2,field,39923,List,,Multi Meter 
+group2,field,39924,Text,,Multi Meter - Comments
+group2,field,39925,List,,Impedance Meter
+group2,field,39926,Text,,Impedance Meter - Comments
+group2,field,39927,List,,Pop Rivet gun
+group2,field,39928,Text,,Pop Rivet gun - Comments
+group2,field,39929,List,,Level 
+group2,field,39930,Text,,Level - Comments
+group2,field,39931,List,,Fish Tape
+group2,field,39932,Text,,Fish Tape - Comments
+group2,field,39933,List,,Hack saw 
+group2,field,39934,Text,,Hack saw - Comments
+group,group3,vcontainer,400,TRUE,
+group3,field,39923,List,,Multi Meter 
+group3,field,39924,Text,,Multi Meter - Comments
+group3,field,39925,List,,Impedance Meter
+group3,field,39926,Text,,Impedance Meter - Comments
+group3,field,39927,List,,Pop Rivet gun
+group3,field,39928,Text,,Pop Rivet gun - Comments
+group3,field,39929,List,,Level 
+group3,field,39930,Text,,Level - Comments
+group3,field,39931,List,,Fish Tape
+group3,field,39932,Text,,Fish Tape - Comments
+group3,field,39933,List,,Hack saw 
+group3,field,39934,Text,,Hack saw - Comments

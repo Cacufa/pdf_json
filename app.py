@@ -1,41 +1,54 @@
 import csv
-
+import json
 
 
 def process_data():
     file_name = "file.csv" #input('Enter a File Name: ')
-    holder = {}
-    holder['sections']=[]
+    #holder = {}
+    #holder['sections']=[]
+    with open("base.json","r") as json_file:
+        holder = json.load(json_file)
     count = -1
-    with open(file_name, 'r') as file: # open the csb file.
+    with open(file_name, 'r') as file: # open the csv file.
         raw_data = csv.reader(file, delimiter=',')
         for data in raw_data:
-            print("")
             if data[0] == "group":
                 temp_group = {}
                 temp_group[data[1]] = []
-                holder['sections'].append(temp_group)
-                print("container found")
                 container = process_container(data)
+                holder['sections'].append(container)
             elif data[1] == "field":
                 field = process_field(data)
-                holder['sections'][count][data[0]].append(field)
-            print(holder)
+                insert_field(holder,data[0],field)
+
+    with open("final_file.json","w") as fp:
+        json.dump(holder,fp)
         
 
 
 def process_container(container):
+    ##called by process_data
+    dict = {}
+    dict['elements'] = []
+    dict["name"] =container[1]
+    dict["type"] = container[2]
+    dict["maxwidth"] = 1
+    dict["height"] = container[3]
+    dict["bordered"] = container[4]
+    return dict
 
-    elements = {}
-    elements["name"] =container[1]
-    elements["type"] = container[2]
-    elements["maxwidth"] = 1
-    elements["height"] = container[3]
-    elements["bordered"] = container[4]
-    return elements
-
+def insert_field(data,cont_name,field):
+    '''in order to find the container route elements based on cont name 
+    we need to iterate in to the dict elements and validate 
+    '''
+    count = 0
+    for item in data['sections']:
+        if cont_name == item['name']: #if the containe name is the same as provided insert the field
+            data['sections'][count]['elements'].append(field)
+        count += 1
 
 def process_field(field):
+    ##called by process_data
     element = {}
     try:
         if field[3] == "List":
@@ -60,37 +73,10 @@ def process_field(field):
         print("Issue found")
     return element
 
-def insert_field(holder, elements, item):
-    '''find the proper group within the json file and insert the item properly
-    1-find the position of the group in the dict-list
-    2-insert the item 
-    3-return a new holder dict
-    '''
-    print(holder)
-    elements_pos = holder['sections'].index(elements)
-    print(elements_pos)
-    try:
-        holder['sections'][elements_pos][elements].append(item)
-    except:
-        print("Error inserting item")
-    return holder
-
 
 def run():
     process_data()
 
-    ''' 
-   holder = {}
-    holder['sections'] = []
-    elements = {} 
-    elements['elements'] = []
-    holder['sections'].append(elements)
-    item = {}
-    item['name']="carlos"
-    item['age'] = 25
-    final_holder = insert_field(holder, 'elements', item)
-    print(final_holder)
-    '''
     
 
 if __name__ == '__main__':

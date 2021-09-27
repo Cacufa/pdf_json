@@ -1,69 +1,83 @@
 {
-    "sections": [
-      {
-        "elements": [
-          {
-            "elements": [
-              {
-                "align": "left",
-                "type": "image",
-                "value": "$$ORG_LOGO",
-                "width": "100"
-              }
-            ],
-            "bordered": false,
-            "height": 100,
-            "name": "Header",
-            "type": "vcontainer"
-          },
-          {
-            "elements": [
-              {
-                "align": "center",
-                "bold": "true",
-                "fontSize": 18,
-                "type": "text",
-                "value": "Job card"
-              },
-              {
-                "type": "newline"
-              },
-              {
-                "type": "text",
-                "value": "$$EVENT_DATE",
-                "width": 275
-              },
-              {
-                "type": "text",
-                "value": "$$WORKER_NAME",
-                "width": 275
-              },
-              {
-                "type": "text",
-                "value": "$$LOCATION",
-                "width": 150
-              },
-              {
-                "type": "text",
-                "value": "$$TASK_START",
-                "width": 275
-              },
-              {
-                "type": "text",
-                "value": "$$TASK_END",
-                "width": 150
-              }
-            ],
-            "bordered": false,
-            "height": 100,
-            "name": "Header",
-            "type": "vcontainer"
-          }
-        ],
-        "bordered": false,
-        "height": 190,
-        "name": "Header",
-        "type": "hcontainer"
-      }
-    ]
-  }
+  "sections": [
+    {
+      "elements": [
+        {
+          "align": "left",
+          "type": "image",
+          "value": "$$ORG_LOGO",
+          "width": "100"
+        },
+        {
+          "type": "newline"
+        },
+        {
+          "type": "newline"
+        },
+        {
+          "type": "text",
+          "align": "center",
+          "bold": "true",
+          "fontColor": "#234573",
+          "fontFamily": "times",
+          "fontSize": 25,
+          "value": "Property Damage Report",
+          "width": 600
+        },
+        {
+          "type": "newline"
+        },
+        {
+          "elements": [
+            {
+              "type": "text",
+              "value": "$$EVENT_DATE",
+              "width": 275
+            }
+          ],
+          "maxWidth": 1,
+          "type": "hcontainer",
+          "name": "HeaderEntry1"
+        },
+        {
+          "elements": [
+            {
+              "type": "text",
+              "value": "$$WORKER_NAME",
+              "width": 275
+            },
+            {
+              "type": "text",
+              "value": "$$LOCATION",
+              "width": 150
+            }
+          ],
+          "maxWidth": 1,
+          "type": "hcontainer",
+          "name": "HeaderEntry1"
+        },
+        {
+          "elements": [
+            {
+              "type": "text",
+              "value": "$$TASK_START",
+              "width": 275
+            },
+            {
+              "type": "text",
+              "value": "$$TASK_END",
+              "width": 150
+            }
+          ],
+          "maxWidth": 1,
+          "type": "hcontainer",
+          "name": "HeaderEntry1"
+        }
+      ],
+      "name": "Header",
+      "type": "vcontainer",
+      "bordered": false,
+      "maxWidth": 550
+    }
+  ]
+}

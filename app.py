@@ -6,6 +6,7 @@ def process_data():
     file_name = "file.csv" #input('Enter a File Name: ')
     #holder = {}
     #holder['sections']=[]
+    spacer_field = {"type": "newline"}
     with open("base.json","r") as json_file:
         holder = json.load(json_file)
     count = -1
@@ -20,6 +21,7 @@ def process_data():
             elif data[1] == "field":
                 field = process_field(data)
                 insert_field(holder,data[0],field)
+                insert_field(holder,data[0],spacer_field)
 
     with open("final_file.json","w") as fp:
         json.dump(holder,fp)
@@ -75,8 +77,9 @@ def process_field(field):
 
 
 def run():
+    print("Starting the program")
     process_data()
-
+    print("Process ended, thanks.")
     
 
 if __name__ == '__main__':

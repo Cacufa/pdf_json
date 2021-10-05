@@ -3,81 +3,77 @@
     {
       "elements": [
         {
-          "align": "left",
-          "type": "image",
-          "value": "$$ORG_LOGO",
-          "width": "100"
-        },
-        {
-          "type": "newline"
-        },
-        {
-          "type": "newline"
-        },
-        {
-          "type": "text",
-          "align": "center",
-          "bold": "true",
-          "fontColor": "#234573",
-          "fontFamily": "times",
-          "fontSize": 25,
-          "value": "Property Damage Report",
-          "width": 600
-        },
-        {
-          "type": "newline"
-        },
-        {
           "elements": [
             {
-              "type": "text",
-              "value": "$$EVENT_DATE",
-              "width": 275
+              "align": "left",
+              "type": "image",
+              "value": "$$ORG_LOGO",
+              "width": "100"
             }
           ],
-          "maxWidth": 1,
-          "type": "hcontainer",
-          "name": "HeaderEntry1"
+          "bordered": false,
+          "name": "Header",
+          "type": "vcontainer",
+          "height": 75,
+          "maxWidth": 1
         },
         {
           "elements": [
             {
               "type": "text",
-              "value": "$$WORKER_NAME",
-              "width": 275
+              "align": "left",
+              "bold": "true",
+              "value": "PDF NAME"
+            },
+            {
+              "type": "newline"
             },
             {
               "type": "text",
-              "value": "$$LOCATION",
-              "width": 150
-            }
-          ],
-          "maxWidth": 1,
-          "type": "hcontainer",
-          "name": "HeaderEntry1"
-        },
-        {
-          "elements": [
-            {
-              "type": "text",
-              "value": "$$TASK_START",
-              "width": 275
+              "value": "$$EVENT_DATE"
             },
             {
               "type": "text",
-              "value": "$$TASK_END",
-              "width": 150
+              "value": "$$WORKER_NAME"
+            },
+            {
+              "type": "text",
+              "value": "$$LOCATION"
+            },
+            {
+              "type": "text",
+              "value": "$$TASK_START"
+            },
+            {
+              "type": "text",
+              "value": "$$TASK_END"
             }
           ],
-          "maxWidth": 1,
-          "type": "hcontainer",
-          "name": "HeaderEntry1"
+          "bordered": false,
+          "name": "Header",
+          "type": "vcontainer",
+          "height": 75,
+          "maxWidth": 1
         }
       ],
-      "name": "Header",
-      "type": "vcontainer",
       "bordered": false,
-      "maxWidth": 550
+      "name": "Header",
+      "type": "hcontainer",
+      "maxWidth": 1,
+      "height": 90
+    },
+    {
+      "elements": [
+        {
+          "type": "text",
+          "value": "_______________________________________________________________________________________________"
+        }
+      ],
+      "name": "Divisor",
+      "type": "vcontainer",
+      "maxwidth": 1,
+      "height": "10",
+      "bordered": "False"
     }
   ]
 }

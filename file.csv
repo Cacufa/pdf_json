@@ -1,7 +1,9 @@
-map,id,type,height,Bordered,Description
-group,group1,vcontainer,400,TRUE,
-group1,field,39923,List,,Multi Meter 
-group,group2,vcontainer,400,TRUE,
-group2,field,39923,List,,Multi Meter 
-group,group3,vcontainer,400,TRUE,
-group3,field,39923,List,,Multi Meter 
+group,main,vcontainer,400,TRUE,
+,,,,,
+main,field,27979,Whole Number,Whole Number,Client ID/Workorder
+main,field,27980,Yes/No,Yes/No,Food Allowance
+main,field,27981,Text,Text,Total Amount
+main,field,27982,Yes/No,Yes/No,Hotel Allowance
+main,field,27983,Text,Text,Total Amount of Hotel
+main,field,27984,Photo,Photo,Picture of Receipt
+main,field,27985,Signature,Signature,The attached expenses and truthful and the best of my knownledge

@@ -23,7 +23,8 @@
               "type": "text",
               "align": "left",
               "bold": "true",
-              "value": "PDF NAME"
+              "value": "PDF NAME",
+              "Font_Size":18
             },
             {
               "type": "newline"

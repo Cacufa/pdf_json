@@ -2,6 +2,7 @@ import json
 import csv
 from pkgutil import iter_importers
 from unicodedata import name
+from pprint import pprint
 
 class Pdf:
     def __init__(self):
@@ -25,7 +26,9 @@ class Pdf:
 
 
     def inspection(self):
-        self.print_items(self.pdf)
+        pprint(self.pdf)
+
+
 
 
                 

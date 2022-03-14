@@ -51,14 +51,14 @@
             }
           ],
           "bordered": false,
-          "name": "Header",
+          "name": "Header fields",
           "type": "vcontainer",
           "height": 75,
           "maxWidth": 1
         }
       ],
       "bordered": false,
-      "name": "Header",
+      "name": "logo",
       "type": "hcontainer",
       "maxWidth": 1,
       "height": 90

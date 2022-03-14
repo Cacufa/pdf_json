@@ -17,7 +17,8 @@ class Container:
                 "bordered":self.bordered
                 }
 
-    def add_element(self, element):
+    def add_element(self, pdf, element):
+        pdf["sections"][0]["elements"].append()
         input("Continue")
         print(element)
         self["elements"].append(element)

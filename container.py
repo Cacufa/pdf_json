@@ -1,11 +1,11 @@
-from elements import *
+from elements import Element
 
 class Container:
 
-    def __init__(self, name, elements=[{"new":1}], heigth=200, type="vcontainer", bordered=True):
+    def __init__(self, name, elements=[], heigth=200, type="vcontainer", bordered=True):
         self.name = name
         self.height = heigth
-        self.elements = elements
+        self.elements = [{"type":"text", "value":self.name}]
         self.type = type
         self.bordered = bordered
 
@@ -17,24 +17,32 @@ class Container:
                 "bordered":self.bordered
                 }
 
-    def add_element(self, pdf, element):
-        pdf["sections"][0]["elements"].append()
-        input("Continue")
-        print(element)
-        self["elements"].append(element)
+    def add_element(self, element):
+        input("function add element")
+        #print(self.elements)
+        input("Next appending element")
+        self.elements.append(element)
 
 if __name__ == "__main__":
     ele = Element("select", 9645567)
     element = ele.get_element()
     newline = ele.new_line()
+    print("Elements---------------- ")
+    # print(element)
+    # print(newline)
+
+    print("-")
+    print("Container ---------------------- ")
     cont = Container("test")
-
     print(cont.get_cont())
-    cont.add_element(element)
 
 
+    print("-")
+    print("Add element to container")
+    
     data = cont.get_cont()
-    print(data)
-    cont.add_element(data, "element added")
+
+    cont.add_element(element)
+    cont.add_element(newline)
     print(data)
 

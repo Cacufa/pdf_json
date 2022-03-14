@@ -39,9 +39,14 @@ if __name__ == "__main__":
     print(newline)
     text_elem = elm.text_element("This is a test for the text")
     print(text_elem)
+
     pdf = {}
     pdf["elements"] = []
+    print("Adding new line")
     pdf["elements"].append(newline)
+    print("Adding new line")
     pdf["elements"].append(text_elem)
+    print("Adding text")
     pdf["elements"].append(element)
+    print("Adding Element")
     print(pdf)

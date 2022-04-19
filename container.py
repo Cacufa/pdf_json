@@ -23,13 +23,13 @@ class Container:
         input("Next appending element")
         self.elements.append(element)
 
+
 if __name__ == "__main__":
     ele = Element("select", 9645567)
     element = ele.get_element()
     newline = ele.new_line()
     print("Elements---------------- ")
-    # print(element)
-    # print(newline)
+
 
     print("-")
     print("Container ---------------------- ")

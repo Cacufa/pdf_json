@@ -1,18 +1,21 @@
 import csv
 import json
-from tkinter import *
+import tkinter as tk
 from tkinter import ttk
-class Aplicacion():
+from tkinter import constants
+
+
+class CSV_IMPORT():
 
     def __init__(self):
-        raiz = Tk()
+        raiz = tk.Tk()
         raiz.geometry('900x600')
         raiz.configure(bg = 'beige')
         raiz.title('Aplicación')
         ttk.Button(raiz, text='process data', 
                    command=self.process_data).grid(row=2,column=0)
 
-        ttk.Entry(raiz,text="Messages:").grid(row=0, column=2, columnspan=8)
+        self.messg_entry = tk.Entry(raiz, width=60).grid(row=0, column=1, columnspan=8)
 
         ttk.Label(raiz,text="Messages:").grid(row=0,column=0)
         
@@ -20,8 +23,9 @@ class Aplicacion():
                    command=raiz.destroy).grid(row=5,column=0)
 
         ## Labels and text
-        results = Text(raiz, height = 10, width = 50).grid(row=1, column=3, rowspan=5, columnspan=5)
-
+        self.text = tk.Text(raiz, height = 20, width = 75).grid(row=1, column=3, rowspan=5, columnspan=5)
+        self.text.insert(constants.INSERT, "test")
+        #txt.insert(constants.INSERT,'You text goes here') # recommend
                 
         raiz.mainloop()
 
@@ -37,6 +41,7 @@ class Aplicacion():
             count += 1
 
     def process_data(self):
+        self.messg_entry.insert(0, "status bar")
         file_name = "file.csv" #input('Enter a File Name: ')
         #holder = {}
         #holder['sections']=[]

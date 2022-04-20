@@ -1,9 +1,10 @@
 group,main,vcontainer,400,TRUE,
-,,,,,
-main,field,27979,Whole Number,Whole Number,Client ID/Workorder
-main,field,27980,Yes/No,Yes/No,Food Allowance
-main,field,27981,Text,Text,Total Amount
-main,field,27982,Yes/No,Yes/No,Hotel Allowance
-main,field,27983,Text,Text,Total Amount of Hotel
-main,field,27984,Photo,Photo,Picture of Receipt
-main,field,27985,Signature,Signature,The attached expenses and truthful and the best of my knownledge
+group,sig,hcontainer,400,TRUE,
+main,field,29854,Text,Truck Number,Text
+main,field,29855,Text,Odometer Start - Last Three,Text
+main,field,29856,Text,Odometer End - Last Three,Text
+main,field,29857,Text,Total Hours Worked on Site,Text
+main,field,29859,List,Work Profile,List
+main,field,29860,Text,Foreman Name,Text
+sig,field,29858,Signature,The information provided is to the best of my knowledge,Signature
+sig,field,29861,Signature,By signing this Job Ticket as the representative of the customer confirms that the hours recorded are accurate in were performed by the named employees in a satisfactory manner.,Signature

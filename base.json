@@ -62,19 +62,6 @@
       "type": "hcontainer",
       "maxWidth": 1,
       "height": 90
-    },
-    {
-      "elements": [
-        {
-          "type": "text",
-          "value": "_______________________________________________________________________________________________"
-        }
-      ],
-      "name": "Divisor",
-      "type": "vcontainer",
-      "maxwidth": 1,
-      "height": "10",
-      "bordered": "False"
     }
   ]
 }

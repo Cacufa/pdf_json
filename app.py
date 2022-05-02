@@ -16,7 +16,7 @@ def insert_field(data,cont_name,field):
         count += 1
 
 def process_data():
-    file_name = "file.csv" #input('Enter a File Name: ')
+    file_name = "file.txt" #input('Enter a File Name: ')
     #holder = {}
     #holder['sections']=[]
     spacer_field = {"type": "newline"}

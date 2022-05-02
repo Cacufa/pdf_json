@@ -1,0 +1,6 @@
+group,group1,vcontainer,200,TRUE
+group,group2,vcontainer,200,TRUE
+group,group3,vcontainer,200,TRUE
+group1,field,1111,Text,Field name
+group1,field,2222,Text,Field name
+group1,field,3333,Text,Field name
